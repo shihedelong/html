@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Crash Course</title>
+</head>
+
+<body>
+    <a href="blog.html">Go to Blog</a>
+    <hr>
+    <!-- heaidng ? -->
+    <h1>Heading One</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+    <h4>Heading Four</h4>
+    <h5>Heading Five</h5>
+    <h6>Heading Six</h6>
+
+    <!-- Paragraph -->
+    <p>Lorem ipsum dolor, sit amet <strong>consectetur adipisicing</strong> elit. Suscipit sint asperiores laboriosam
+        sit, non repellat
+        autem nobis dicta porro? Dolorem hic et officiis soluta, <em>neque ad sed ut reprehenderit</em> neque ad sed ut
+        reprehenderit illo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit <a href="https://www.google.com">int
+            asperiores</a>sint asperiores laboriosam sit, non repellat
+        autem nobis dicta porro? Dolorem hic et officiis soluta, neque ad sed ut reprehenderit illo.</p>
+
+
+    <!-- lists -->
+
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+    </ul>
+
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+    </ol>
+
+    <!-- table -->
+    <table>
+        <thead>
+            <!-- table row -->
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- table data -->
+            <tr>
+                <td>Hedelong Shi</td>
+                <td>shihedelong@gmail.com</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Emily Lu</td>
+                <td>emilylu@gmail.com</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Yo Lu</td>
+                <td>nicelu@gmail.com</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- blank one row -->
+    <br>
+    <!-- write one line in one row -->
+    <hr>
+    <br>
+
+    <!-- Forms -->
+    <!-- action is submiting form, 
+        method POST is add data to our server 
+        method GET is see the data filled in URL from server -->
+
+    <Form action="process.php" method="POST">
+        <!-- input and label is the inline tag so we use div tag becuase div is block -->
+        <div>
+            <label>First Name</label>
+            <!-- camel case For example firstName -->
+            <input type="text" name="firstName" placeholder="Enter first name">
+        </div>
+        <br>
+        <div>
+            <label>Last Name</label>
+            <input type="text" name="lastName">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email">
+        </div>
+        <br>
+        <div>
+            <label>Message</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Gender</label>
+            <select name="gender" id="">
+                <option value="male">Male</option>
+                <option value="femal">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <br>
+        <div><label>Age</label>
+            <!-- camel case For example firstName -->
+            <input type="number" name="age">
+        </div>
+        <br>
+        <div>
+            <label>Birthday</label>
+            <input type="date" name="birthday">
+        </div>
+        <br>
+        <!-- input button  -->
+        <!-- this is only the button in the Form, inner the Form not out side Form -->
+        <input type="submit" name="submit" value="Submit">
+    </Form>
+
+    <!-- button -->
+    <button>Click Me</button>
+    <br>
+    <!-- Image -->
+    <a href="images/sample.jpeg">
+        <img src="images/sample.jpeg" alt="My Sample Image" width="200">
+    </a>
+
+    <!-- Quotations 引用-->
+    <blockquote cite="http://traversymedia.com"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+        cupiditate beatae at impedit pariatur. Quidem quam sunt vero inventore qui autem ex commodi quibusdam quia
+        aspernatur. Accusantium debitis alias quidem?
+    </blockquote>
+
+    <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+
+    <p><cite>HTML crash Course</cite> by Hedelong Shi</p>
+
+
+    <div style="margin-top:500px"></div>
+</body>
+
+</html>
